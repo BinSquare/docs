@@ -67,7 +67,6 @@ This minor line is still a release candidate. The last stable release is `0.15.3
 - Update bundled npm tooling to address vulnerabilities in tar, ip-address, and brace-expansion.
 - Ensure LangGraph Server images install AnyIO 4.14.2 or newer to address upstream security vulnerabilities.
 - JS/TS custom auth handlers now have their request mutations applied by the server, including the store namespace rewrite used to scope items per user. This fixes cross-user store isolation in LangGraph.js deployments following the documented pattern. Namespaces produced by any custom auth handler, Python or JS, are now validated before reaching the store: an empty or period-containing label is rejected with 422 instead of writing an item that cannot be read back.
-- Includes dependency and security maintenance updates.
 
 <Accordion title="v0.16 releases">
 <Update label="2026-10-07" tags={["agent-server"]}>
@@ -167,7 +166,6 @@ Latest version: `0.15.3`
 - Backport Python dependency security updates and prevent obsolete Python package files from surviving upgrades.
 - Backport Go and Hono security dependency updates.
 - JS/TS custom auth handlers now have their request mutations applied by the server, including the store namespace rewrite used to scope items per user. This fixes cross-user store isolation in LangGraph.js deployments following the documented pattern. Namespaces produced by any custom auth handler, Python or JS, are now validated before reaching the store: an empty or period-containing label is rejected with 422 instead of writing an item that cannot be read back.
-- Includes dependency and security maintenance updates.
 
 <Accordion title="v0.15 releases">
 <Update label="2026-10-07" tags={["agent-server"]}>
